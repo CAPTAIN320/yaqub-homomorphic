@@ -1,0 +1,135 @@
+To enable SGX by software after SoftwareAttestation in BIOS:
+
+1. Clone Repository: git clone https://github.com/intel/linux-sgx.git
+2. Paste File into repository: cp -r "File_Location"/enable_sgx.cpp linux-sgx/sdk/libcapable/linux
+3. Goto directory: cd linux-sgx/sdk/libcapable/linux
+3. Make: make
+4. Compile: gcc enable_sgx.cpp -o enable_sgx -L. -lsgx_capable
+5. Check if SGX has been enabled: sudo LD_LIBRARY_PATH=. ./enable_sgx
+
+To test if sgx is enabled, go to linux-sgx/sdk/libcapable/linux and use the fllg command:
+
+If is_sgx_capable is eqaul to 1, then SGX has been enabled.
+
+
+
+
+To RUN graphene
+do NOT set ISGX_DRIVER_PATH in command line
+
+
+
+To RUN cosmix
+run every make command with make SDK_BUILD=-DSDK_BUILD
+
+
+implant + crown + SL + flight + hotel
+
+turkey
+800 + 300 + 200 + 800 + 800 * 2
+
+implant&crown + flight + hotel
+2500 + 300 + 300 * 2
+
+
+
+sudo clara config --key OW41Y2t0NG5qbG9lNWZyM2Eya2E0MnJjZ206MzUyOWNjNzMtODQ1MC00NzM5LWJmZTMtNTAxNGE3NTg0ZWNk
+
+
+sudo cp /etc/kubernetes/admin.conf $HOME/.kube/
+sudo chown $(id -u):$(id -g) $HOME/.kube/admin.conf
+export KUBECONFIG=$HOME/.kube/admin.conf
+
+
+kubectl delete service tiller-deploy -n kube-system service "tiller-deploy" deleted
+
+#########
+if cannot connect to localhost  port, then delete related files in sources.list.d 
+#########
+
+
+########
+if bootstrap.sh cannot install due to kubernetes, delete the install_kuberenetes  part that checks version OR run cpt_correct_bootstrap.sh
+########
+
+########
+to shut down docker clara container, stop and/or remove claradevday-pt NOTE: you will have to re-run ./startClaraTrainNotebooks.sh
+docker ps -a
+docker stop container_ID
+docker rm container_ID
+########
+
+
+what exists
+1- central homomorphic training (openmined tutorial)
+2- fl gan training (yaqubdesign)
+3- fl homomorphic training (nvidia clara)
+
+what i want
+1- fl gan homomorphic training
+
+what to do - run nvidia clara fl homomorphic training
+
+
+setup more clients on project-cpt
+setup 4 or more clients
+setup same system as HE on 2nd run
+
+setup project-cpt-gan
+create GAN on the
+create GAN HE instead of the normal one
+
+automate key distribution for password unzipping?
+
+where is the client data stored???
+where is the model???
+
+apply AutoML feature to get better results in the future by automating parameter tuning
+
+
+make client timeout more than 10 min
+
+
+
+
+be conscious when learning the language
+consume a wide variety (genre) of media
+audio books, tv, movies
+repeat words you hear out loud 
+start writing (typing)
+
+230,000 + 150,000 + 50,000 = 430,000 - 280,000 = 150,000 (needed) 3rd
+
+280,000 - 104,000 - 30,000 - 14,400 - (30,000) = 101,600 (left) - 30k 1st
+
+435,540 - 280,000 = 155,540 (needed)
+
+268,000 + 30,000 + 14,820 = 312,820 - 280,000 = 32,820 (needed) 4th - no CC, no WT
+
+298,000 + 30,000 + 14,430 = 342,430 - 280,000 = 62,430 (needed) 2nd
+
+320,000 + (50,000) = 380,000 - 280,000 = 100,000 (needed) - 50K - 
+
+
+
+
+Tell professor the problem of the data getting for the entire system instead of per machine
+
+gpu utilization
+gpu memory
+gpu resources
+PCIe throughput
+
+Machine resources: CPU, Memory, Disk IO Bandwidth, Network IO Bandwidth
+
+
+
+read more about GANs
+read tenseal docs
+plan security analysis section
+get diagrams
+place diagrams in paper
+place references in their sections
+show professor
+
+
