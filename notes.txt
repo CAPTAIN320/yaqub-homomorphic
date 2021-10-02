@@ -125,11 +125,19 @@ Machine resources: CPU, Memory, Disk IO Bandwidth, Network IO Bandwidth
 
 
 read more about GANs
+
 read tenseal docs
 plan security analysis section
-get diagrams
+get diagrams (from normal gan training google colab notebook)
 place diagrams in paper
 place references in their sections
 show professor
 
 
+IDEA: to speed up computation:
+		Default mode should be encryption of the data and then do training
+		Improved mode should be encryption of the model and then to the aggregation
+	Show the Professor proofs of the existing methods only encrypting the model
+
+Sunday Work:
+		
